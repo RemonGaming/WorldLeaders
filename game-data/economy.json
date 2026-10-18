@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "simulation": {
+    "base_year": 2026,
+    "days_per_month": 30,
+    "economic_update_interval_days": 30
+  },
+  "indicators": {
+    "inflation": {
+      "min": -10.0,
+      "max": 1000.0,
+      "default": 3.0
+    },
+    "unemployment": {
+      "min": 0.0,
+      "max": 100.0,
+      "default": 5.0
+    },
+    "interest_rate": {
+      "min": 0.0,
+      "max": 100.0,
+      "default": 4.0
+    },
+    "tax_rate": {
+      "min": 0.0,
+      "max": 100.0,
+      "default": 20.0
+    },
+    "public_debt_to_gdp": {
+      "min": 0.0,
+      "max": 1000.0,
+      "default": 60.0
+    }
+  },
+  "budget": {
+    "categories": [
+      "healthcare",
+      "education",
+      "infrastructure",
+      "defense",
+      "social_welfare",
+      "research",
+      "debt_service"
+    ]
+  },
+  "trade": {
+    "enabled": true,
+    "track_imports": true,
+    "track_exports": true,
+    "track_trade_balance": true
+  }
+}
