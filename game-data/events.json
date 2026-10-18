@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "events": [
+    {
+      "id": "economic_recession",
+      "name": "Krisis Ekonomi",
+      "category": "economy",
+      "description": "Aktivitas ekonomi menurun dan pengangguran meningkat.",
+      "duration_days": 180,
+      "effects": {
+        "gdp_growth": -2.0,
+        "unemployment": 2.0,
+        "public_approval": -5
+      },
+      "trigger": {
+        "type": "random",
+        "base_chance": 0.05
+      }
+    },
+    {
+      "id": "national_election",
+      "name": "Pemilihan Umum",
+      "category": "politics",
+      "description": "Pemerintah menghadapi pemilihan umum nasional.",
+      "duration_days": 30,
+      "effects": {
+        "public_approval": 0
+      },
+      "trigger": {
+        "type": "scheduled",
+        "interval_days": 1460
+      }
+    },
+    {
+      "id": "natural_disaster",
+      "name": "Bencana Alam",
+      "category": "disaster",
+      "description": "Bencana alam merusak infrastruktur dan mengganggu aktivitas masyarakat.",
+      "duration_days": 60,
+      "effects": {
+        "infrastructure": -5,
+        "government_budget": -3
+      },
+      "trigger": {
+        "type": "random",
+        "base_chance": 0.02
+      }
+    },
+    {
+      "id": "diplomatic_crisis",
+      "name": "Krisis Diplomatik",
+      "category": "diplomacy",
+      "description": "Perselisihan antarnegara meningkatkan ketegangan diplomatik.",
+      "duration_days": 90,
+      "effects": {
+        "diplomatic_relations": -15,
+        "trade_efficiency": -5
+      },
+      "trigger": {
+        "type": "conditional",
+        "condition": "diplomatic_tension_high"
+      }
+    }
+  ]
+}
