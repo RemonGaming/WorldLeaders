@@ -1,0 +1,14 @@
+{
+  "game": "WORLD LEADERS",
+  "version": "1.0.0",
+  "minimum_supported_version": "1.0.0",
+  "update_type": "content",
+  "release_notes": [
+    "Fondasi sistem pembaruan WORLD LEADERS"
+  ],
+  "content": {
+    "countries": "game-data/countries.json",
+    "economy": "game-data/economy.json",
+    "events": "game-data/events.json"
+  }
+}
