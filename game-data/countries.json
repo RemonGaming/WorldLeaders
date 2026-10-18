@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-10-19",
+  "countries": [
+    {
+      "id": "IDN",
+      "name": "Indonesia",
+      "capital": "Jakarta",
+      "population": 284000000,
+      "government": "Presidential Republic",
+      "gdp_usd": 1400000000000,
+      "stability": 75,
+      "relations": {}
+    },
+    {
+      "id": "JPN",
+      "name": "Japan",
+      "capital": "Tokyo",
+      "population": 123000000,
+      "government": "Parliamentary Constitutional Monarchy",
+      "gdp_usd": 4200000000000,
+      "stability": 82,
+      "relations": {}
+    },
+    {
+      "id": "USA",
+      "name": "United States",
+      "capital": "Washington, D.C.",
+      "population": 342000000,
+      "government": "Federal Presidential Republic",
+      "gdp_usd": 29000000000000,
+      "stability": 78,
+      "relations": {}
+    }
+  ]
+}
